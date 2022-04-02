@@ -40,8 +40,8 @@ export default class StarkSpeech {
     this.recognizer = create(
       "BROWSER_FFT", // fourier transform type, not useful to change
       undefined, // speech commands vocabulary feature, not useful for your models
-      `${this.arg.baseUrl}/audio/model.json`,
-      `${this.arg.baseUrl}/audio/metadata.json`
+      `${this.arg.baseUrl}/model.json`,
+      `${this.arg.baseUrl}/metadata.json`
     );
   }
 
