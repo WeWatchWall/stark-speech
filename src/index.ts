@@ -59,7 +59,7 @@ export default class StarkSpeech {
   }
 
 
-  public async speak (arg: string)  {
+  public async speak (arg?: string)  {
     let utterance = new SpeechSynthesisUtterance(arg);
     var flatPromise = new FlatPromise();
 

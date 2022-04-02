@@ -1,5 +1,6 @@
 # Stark-speech
 
+[![NPM version](https://img.shields.io/npm/v/stark-speech.svg)](https://www.npmjs.com/package/stark-speech)
 Easy to integrate speech functions for browsers.
 
 ## Install
@@ -22,6 +23,7 @@ The assets are called:
 
 [An example model is here.](https://github.com/WeWatchWall/stark-speech/tree/main/assets)
 The example verbally responds to "Stark" and, by coincidence, "Jarvis".
+Other models can be trained on the [TeachableMachine site](https://teachablemachine.withgoogle.com/).
 
 ## API Reference
 
@@ -112,3 +114,8 @@ async function Main () {
 }
 Main();
 ```
+
+### TODO
+
+- Offline hotword detection on a WebWorker
+- Voiceprint training & validation through transfer learning
