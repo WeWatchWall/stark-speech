@@ -30,7 +30,6 @@ The example verbally responds to "Stark" and, by coincidence, "Jarvis".
 ```typescript
 import StarkSpeech from 'stark-speech';
 
-
 async function Main () {
   let starkSpeech = StarkSpeech.init(
     1e3, // Default = 8e2  Wait time before returning a result.
@@ -52,7 +51,6 @@ a. Speak
 ```typescript
 import StarkSpeech from 'stark-speech';
 
-
 async function Main () {
   // ... initialize
 
@@ -66,7 +64,6 @@ b. Listen With Browser Engine (Online)
 ```typescript
 import StarkSpeech from 'stark-speech';
 
-
 async function Main () {
   // ... initialize
 
@@ -75,11 +72,13 @@ async function Main () {
 Main();
 ```
 
+Obviously this method will not usually work without without a network connection.
+Further, at least for mobile, the screen needs to be on.
+
 c. Listen for Hotword (Offline)
 
 ```typescript
 import StarkSpeech from 'stark-speech';
-
 
 async function Main () {
   // ... initialize
@@ -100,7 +99,6 @@ Communication patterns are now simple to implement, for example this parrot loop
 
 ```typescript
 import StarkSpeech from 'stark-speech';
-
 
 async function Main () {
   // ... initialize
