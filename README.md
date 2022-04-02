@@ -9,7 +9,7 @@ npm i stark-speech
 
 ```
 
-Your page depends on the hotword detection model, that three assets.
+Your page depends on the hotword detection model, that has three assets.
 They load via HTTP at runtime and need to be copied to your project.
 
 The assets are called:
@@ -21,7 +21,7 @@ The assets are called:
 ```
 
 [An example model is here.](https://github.com/WeWatchWall/stark-speech/tree/main/assets)
-The example verbally responds to "Stark" and, by coincidence, Jarvis.
+The example verbally responds to "Stark" and, by coincidence, "Jarvis".
 
 ## API Reference
 
@@ -36,11 +36,14 @@ async function Main () {
     1e3, // Default = 8e2  Wait time before returning a result.
     0.9, // Default = 0.93 Accuracy of prediction for hotword detection.
     0.5, // Default = 0.75 Inverse times hotword is checked per second. 1/0.5 = 2 times/second.
-    "https://myWebpage.org" // Default = { location.href } Base URL where the three hotword model is located.
+    "https://myWebpage.org" // Default = { location.href } Base URL where the hotword model is located.
   );
 }
 Main();
 ```
+
+This library follows the singleton pattern due to issues with re-use of the microphone.
+Subsequent calls to StarkSpeech.init() will return the first instance and the new arguments are ignored.  
 
 ### 2. API Reference
 
