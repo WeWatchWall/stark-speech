@@ -28,9 +28,9 @@ export default class StarkSpeech {
 
   private constructor(
     delay = SWITCH_DELAY_DEFAULT,
+    baseUrl = URL_DEFAULT,
     accuracy = DETECT_ACCURACY_DEFAULT,
-    overlap = OVERLAP_DEFAULT,
-    baseUrl = URL_DEFAULT
+    overlap = OVERLAP_DEFAULT
   ) {
     this.arg = { accuracy, delay, overlap, baseUrl };
 
@@ -47,12 +47,12 @@ export default class StarkSpeech {
 
   public static init(
     delay?: number,
+    baseUrl?: string,
     accuracy?: number,
-    overlap?: number,
-    baseUrl?: string
+    overlap?: number
   ): StarkSpeech { 
     if (!StarkSpeech.instance) {
-      StarkSpeech.instance = new StarkSpeech(accuracy, delay, overlap, baseUrl);
+      StarkSpeech.instance = new StarkSpeech(accuracy, baseUrl, delay, overlap);
     }
 
     return StarkSpeech.instance;
