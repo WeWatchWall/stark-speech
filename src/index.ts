@@ -27,8 +27,8 @@ export default class StarkSpeech {
   private isLocalInit: boolean;
 
   private constructor(
-    accuracy = DETECT_ACCURACY_DEFAULT,
     delay = SWITCH_DELAY_DEFAULT,
+    accuracy = DETECT_ACCURACY_DEFAULT,
     overlap = OVERLAP_DEFAULT,
     baseUrl = URL_DEFAULT
   ) {
@@ -46,8 +46,8 @@ export default class StarkSpeech {
   }
 
   public static init(
-    accuracy?: number,
     delay?: number,
+    accuracy?: number,
     overlap?: number,
     baseUrl?: string
   ): StarkSpeech { 
