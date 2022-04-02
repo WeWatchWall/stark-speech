@@ -49,6 +49,8 @@ Subsequent calls to StarkSpeech.init() will return the first instance and the ne
 
 ### 2. API Reference
 
+Before any of the functions can run on mobile, the user needs to interact with the UI.
+
 a. Speak
 
 ```typescript
