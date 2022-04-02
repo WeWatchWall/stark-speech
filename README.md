@@ -1,6 +1,7 @@
 # Stark-speech
 
 [![NPM version](https://img.shields.io/npm/v/stark-speech.svg)](https://www.npmjs.com/package/stark-speech)
+
 Easy to integrate speech functions for browsers.
 
 ## Install
