@@ -1,0 +1,12 @@
+diff --git a/node_modules/@tensorflow-models/speech-commands/package.json b/node_modules/@tensorflow-models/speech-commands/package.json
+index 0af3132..a0d2091 100644
+--- a/node_modules/@tensorflow-models/speech-commands/package.json
++++ b/node_modules/@tensorflow-models/speech-commands/package.json
+@@ -40,6 +40,7 @@
+     "typescript": "3.3.3333",
+     "yalc": "~1.0.0-pre.21"
+   },
++  "browser": { "fs": false, "node-fetch": false, "string_decoder": false, "crypto": false },
+   "scripts": {
+     "build": "tsc",
+     "lint": "tslint -p . -t verbose",
