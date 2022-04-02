@@ -25,7 +25,7 @@
     "clean": "node clean.js dist build package",
     "build-all": "npm run clean && npm install",
     "postinstall": "npx patch-package && node build.js",
-    "publish": "node publish.js"
+    "updatePublish": "node publish.js"
   },
   "devDependencies": {
     "esbuild": "^0.14.30",
