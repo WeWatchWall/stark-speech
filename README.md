@@ -38,7 +38,7 @@ async function Main () {
     1e3, // Default = 8e2  Wait time before returning a result.
     0.9, // Default = 0.93 Accuracy of prediction for hotword detection.
     0.5, // Default = 0.75 Inverse times hotword is checked per second. 1/0.5 = 2 times/second.
-    "https://myWebpage.org" // Default = { location.href } Base URL where the hotword model is located.
+    "https://myWebpage.org" // Default = Current address { location.href } Base URL where the hotword model is located.
   );
 }
 Main();
