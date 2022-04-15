@@ -112,7 +112,7 @@ async function Main () {
     await starkSpeech.speak("What's my name?");
     await starkSpeech.listenBackground();
     await starkSpeech.speak("Got a cracker?");
-    await starkSpeech.speak(`You said ${await starkSpeech.listen();}`);
+    await starkSpeech.speak(`You said ${ await starkSpeech.listen() }`);
   }
 }
 Main();
